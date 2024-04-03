@@ -18,13 +18,7 @@ STEP 02:
 --> Keep cluster IP adress family as - "IPv4"
 --> Keep cluster endpoint access as - "Public" 
 
-STEP 03: No change
-
-STEP 04: No change
-
-STEP 05: No change
-
-STEP 06: Review and Create the cluster
+STEP 03: Review and Create the cluster
 
 # Create Node Group - Data plane
 
