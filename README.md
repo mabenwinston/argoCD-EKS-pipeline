@@ -1,2 +1,3 @@
 # argoCD-EKS-pipeline
-GitOps pipeline to deploy app on EKS using Helm &amp; ArgoCD
+
+GitOps project to deploy app on EKS cluster using Helm &amp; ArgoCD
