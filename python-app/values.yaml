@@ -1,0 +1,5 @@
+replica_count: 1
+tag: latest
+service_port: 5000
+serviceType: NodePort
+NodePort: 30000
