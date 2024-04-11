@@ -31,11 +31,12 @@ STEP 01:
     * Next Add permisssion by selecting policy - here 3 policies are required - "AmazonEKSWorkerNodePolicy", "AmazonEKS_CNI_Policy", "AmazonEC2ContainerRegistryReadOnly"
     * Give a role name (ex: node-grp-01)
 
+STEP 02:
 --> Go to EKS console > click on compute > add node group
 --> Give node group name (ex: eks-node-grp-01)
 --> Select the Node IAM role previously created in STEP 01
 
-STEP 02:
+STEP 03:
 --> Select AMI type (ex: Amazon Linux 2)
 --> Keep capacity type as "On-Demand"
 --> Select Instance type "t3.medium"
@@ -49,3 +50,20 @@ STEP 01:
 --> Update the ~/.kube/config file 
 
     $ aws eks update-kubeconfig --region us-east-1 --name eks-cluster-01
+
+# HELM Commands 
+
+* helm create python-app
+* helm install python-deployment python-app
+* helm list
+* helm show all python-app
+* helm lint python-app
+* helm pull python-app
+* helm package python-app
+* helm repo add <repo_name> <url>
+* helm repo list
+* helm repo remove <repo_name>
+* helm upgrade python-deployment python-app
+* helm rollback python-deployment <revision_num>
+* helm uninstall python-deployment
+
